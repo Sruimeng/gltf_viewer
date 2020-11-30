@@ -1,2 +1,15 @@
 
-add_library(toy "aabb.h" "vector.h" "scene.h" "matrix.h" "scene.cpp"  "camera.h" "load_gltf.cpp" "const.h"  "camera.cpp" "quaternion.h" "euler.h"  "track_ball.h" "track_ball.cpp" "controls/controls.h" "util.h")
+set(sources
+    math/euler.h
+    math/matirix.h
+    math/quaternion.h
+    math/vector.h 
+)
+
+add_library(toy SHARED
+    math/euler.h
+    math/matirix.h
+    math/quaternion.h
+    math/vector.h
+    aabb.h
+)
