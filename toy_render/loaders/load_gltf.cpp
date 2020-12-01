@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include "scene.h"
-#include "../include/tinygltf/tiny_gltf.h"
+#include "supports/tinygltf/tiny_gltf.h"
 //#include 
 namespace toy {
 
@@ -182,14 +182,14 @@ namespace toy {
 		{
 			retur = loader.LoadBinaryFromFile(&model, &err, &warn, filename);
 		}
-		if (!warn.empty())//´òÓ¡¾¯¸æ
+		if (!warn.empty())//ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½
 			std::cerr << "glTF WARNING: " << warn << std::endl;
-		if (!retur)//´òÓ¡´íÎó
+		if (!retur)//ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½
 		{
 			std::cerr << "Failed to load GLTF scene '" << filename << "': " << err << std::endl;
 			throw err.c_str();
 		}
-		//Ìí¼ÓÊý¾Ý
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		for (const auto& gltf_buffer : model.buffers)
 		{
 			const uint64_t bufffer_size = gltf_buffer.data.size();

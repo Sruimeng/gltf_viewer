@@ -1,11 +1,11 @@
 #pragma once
-#include "vector.h"
-#include "matrix.h"
+#include "../math/vector.h"
+#include "../math/matrix.h"
 namespace toy {
     class  Camera
     {
     public:
-        //Ä¬ÈÏ²ÎÊýµÄÏà»ú
+        //Ä¬ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         Camera();
         Camera(const float3& eye, const float3& lookat, const float3& up, float fovY, float aspectRatio);
 

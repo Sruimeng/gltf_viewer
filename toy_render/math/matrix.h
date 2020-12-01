@@ -1,4 +1,5 @@
 #pragma once
+
 #include "vector.h"
 
 #define MAT_DECL template <unsigned int M, unsigned int N>
@@ -13,9 +14,8 @@ namespace toy {
 	MAT_DECL class Matrix
 	{
 	public:
-		typedef typename VectorType<M>::Vector floatM;//ĞĞ
-		typedef typename VectorType<N>::Vector floatN;//ÁĞ
-		//ÖØÔØ
+		typedef typename VectorType<M>::Vector floatM;
+		typedef typename VectorType<N>::Vector floatN;
 		inline float operator[](unsigned int i)const { return m_elements[i]; }
 
 		Matrix();
@@ -24,11 +24,11 @@ namespace toy {
 		Matrix(const std::initializer_list<float>& list);
 		float* getElements() { return m_elements; }
 		void setElements(const float* val) { m_elements = val; }
-		//ËÄ½×/Èı½×/¾ØÕóÌØÕ÷»¯
+		//çŸ©é˜µåˆå§‹åŒ–
 		static Matrix<M, M> identity();
 
 	private:
-		//¾ØÕóµÄ¾ßÌåÊı¾İ
+		//çŸ©é˜µæ•°ç»„
 		float m_elements[M * N];
 	};
 
@@ -49,7 +49,7 @@ namespace toy {
 		}
 	}
 
-	//ĞÂ½¨M½×µÄµ¥Î»¾ØÕó
+	//çŸ©é˜µåˆå§‹åŒ–
 	template <unsigned int M, unsigned int N>
 	inline  Matrix<M, M> Matrix<M, N>::identity() {
 		/*float temp[M * M];

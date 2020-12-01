@@ -7,9 +7,9 @@ namespace toy {
 	{
 	public:
 		Euler();
-		inline Euler(float3 Euler) { this->Euler = Euler };
+		inline Euler(float3 Euler) { this->euler = Euler; };
 	private:
-		float3 Euler;
+		float3 euler;
 		std::string order;
 	};
 
