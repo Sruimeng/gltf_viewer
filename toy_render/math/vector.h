@@ -38,15 +38,15 @@ namespace toy {
 	inline float4 make_float4(float x,float y,float z,float w) {
 		float4 r;		r.x = x;		r.y = y;		r.z = z;		r.w = w; return r;
 	}
-	//�ӷ�
+	//向量加法
 	inline float3 operator+(const float3& a, const float3& b) {
 		return make_float3(a.x + b.x, a.y + b.y, a.z + b.z);
 	}
-	//����
+	//向量减法
 	inline float3 operator-(const float3& a, const float3& b) {
 		return make_float3(a.x - b.x, a.y - b.y, a.z - b.z);
 	}
-	//�˷�
+	//向量乘法
 	inline float3 operator*(const float3& a, const float3& b) {
 		return make_float3(a.x * b.x, a.y * b.y, a.z * b.z);
 	}
@@ -58,23 +58,23 @@ namespace toy {
 		return a.x * b, a.y* b, a.z* b;
 	}
 
-	//���
+	//点积
 	inline float dot(const float3& a, const float3& b)
 	{
 		return a.x * b.x + a.y * b.y + a.z * b.z;
 	}
-	//���
+	//叉积
 	inline float3 cross(const float3& a, const float3& b) {
 		return make_float3(a.y * b.z - a.z * b.y, a.z * b.x - a.x * b.z, a.x * b.y - a.y * b.x);
 	}
-	//��������
+	//a->b的长度
 	inline float length(const float3& a, const float3& b) {
 		return sqrtf(dot(a, b));
 	}
 	inline float length(const float3& a) {
 		return sqrtf(dot(a, a));
 	}
-	//��λ����
+	//归一化
 	inline float3 normalize(const float3& a) {
 		float length_scale = 1.f / sqrtf(dot(a, a));
 		return a * length_scale;

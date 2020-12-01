@@ -182,14 +182,14 @@ namespace toy {
 		{
 			retur = loader.LoadBinaryFromFile(&model, &err, &warn, filename);
 		}
-		if (!warn.empty())//��ӡ����
+		if (!warn.empty())//警告不为空
 			std::cerr << "glTF WARNING: " << warn << std::endl;
-		if (!retur)//��ӡ����
+		if (!retur)//返回为空
 		{
 			std::cerr << "Failed to load GLTF scene '" << filename << "': " << err << std::endl;
 			throw err.c_str();
 		}
-		//��������
+		//解析数据 一般只有一个buffer
 		for (const auto& gltf_buffer : model.buffers)
 		{
 			const uint64_t bufffer_size = gltf_buffer.data.size();
