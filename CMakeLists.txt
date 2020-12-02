@@ -8,5 +8,3 @@ include_directories(
 )
 
 add_subdirectory(toy_render)
-
-add_executable(gltf_viewer main.cpp)
