@@ -1,12 +1,12 @@
 #pragma once
-
+#include "const.h"
 namespace toy {
-	//½Ç¶È×ª»¡¶È
+	//ï¿½Ç¶ï¿½×ªï¿½ï¿½ï¿½ï¿½
 	float radians(float degrees)
 	{
 		return degrees * M_PIf / 180.0f;
 	}
-	//»¡¶È×ª½Ç¶È
+	//ï¿½ï¿½ï¿½ï¿½×ªï¿½Ç¶ï¿½
 	float degrees(float radians)
 	{
 		return radians * M_1_PIf * 180.0f;
