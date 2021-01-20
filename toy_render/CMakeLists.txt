@@ -1,10 +1,12 @@
 set(SOURCE
-    cameras/camera.h
-    cameras/camera.cpp
     math/euler.h 
     math/matrix.h 
     math/quaternion.h 
     math/vector.h 
+    scene/scene.h
+    scene/scene.cpp
+    cameras/camera.h
+    cameras/camera.cpp
 )
 
 add_library(toy SHARED ${SOURCE})

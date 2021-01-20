@@ -1,8 +1,8 @@
 #pragma once;
 
 #include <iostream>
-#include "scene.h"
-#include "supports/tinygltf/tiny_gltf.h"
+#include "../scene/scene.h"
+#include "../supports/tinygltf/tiny_gltf.h"
 //#include 
 namespace toy {
 

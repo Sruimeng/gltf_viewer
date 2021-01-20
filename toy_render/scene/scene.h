@@ -3,10 +3,10 @@
 
 #include <vector>
 #include <iostream>
-#include "vector.h"
-#include "aabb.h"
-#include "matrix.h"
-#include "camera.h"
+#include "../math/vector.h"
+#include "../math/aabb.h"
+#include "../math/matrix.h"
+#include "../cameras/camera.h"
 namespace toy {
 
 	struct Mesh

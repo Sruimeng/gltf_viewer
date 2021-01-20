@@ -8,12 +8,8 @@
             "name": "Launch Debug", //名称
             "type": "cppdbg", //调试类型，除使用msvc进行调试外，均为该类型
             "request": "launch",
-            "program": "${workspaceFolder}/build/${workspaceFolder}/${workspaceFolder}", //指定C/C++程序位置
+            "program": "${workspaceFolder}/build/toy_render/toy_example", //指定C/C++程序位置
             "args": [
-                "-i",
-                "jixiegui.glb",
-                "-o",
-                "out.glb"
             ], //指定运行参数
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}", //指定工作目录
