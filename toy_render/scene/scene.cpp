@@ -1,9 +1,12 @@
 #include "scene.h"
+#include "../loaders/load_gltf.h"
 namespace toy {
 	void loadScene(const std::string& filename, Scene* scene) {
 		const std::string model_type = filename.substr(filename.find_last_of('.') + 1);
-		if (model_type == "glb" || model_type == "gltf") {
-			void loadGLTF(const std::string & filename, Scene & scene, const std::string & model_type);
+		
+		if (model_type == "glb") {
+			std::cerr<<"aaaaaaaaaaaaaaaaaaaaaa"<<"\n";
+			loadGLTF(filename,  scene, model_type);
 		}
 
 	};

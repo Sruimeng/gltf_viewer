@@ -3,8 +3,11 @@ set(SOURCE
     math/matrix.h 
     math/quaternion.h 
     math/vector.h 
+    
     scene/scene.h
     scene/scene.cpp
+    loaders/load_gltf.h
+    loaders/load_gltf.cpp
     cameras/camera.h
     cameras/camera.cpp
 )

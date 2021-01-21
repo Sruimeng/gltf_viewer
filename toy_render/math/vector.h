@@ -6,6 +6,16 @@ namespace toy {
 #define M_PIf       3.14159265358979323846f
 #endif
 
+	struct uchar2
+	{
+		unsigned char x, y;
+	};
+
+	struct uchar4
+	{
+		unsigned char x, y,z,w;
+	};
+	
 	struct int3
 	{
 		int x, y, z;

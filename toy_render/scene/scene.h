@@ -46,7 +46,7 @@ namespace toy {
 
 	};
 	void loadScene(const std::string& filename, Scene* scene);
-	void loadGLTF(const std::string& filename, Scene& scene, const std::string& model_type);
+	
 	
 }
 
